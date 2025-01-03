@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporal Action Localization with Cross Layer Task Decoupling and Refinement</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .authors {
+            color: #007bff;
+        }
+        .affiliations {
+            color: #555;
+            font-size: 14px;
+        }
+        .footer {
+            margin-top: 30px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: black;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: darkgray;
+        }
+        .abstract {
+            max-width: 800px;
+            margin: auto;
+            text-align: justify;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Temporal Action Localization with Cross Layer Task Decoupling and Refinement</h1>
+
+    <p class="authors">
+        Qiang Li<sup>1,4</sup>, Di Liu<sup>1,2</sup>, Jun Kong<sup>1,3</sup>, Sen Li<sup>1</sup>, Hui Xu<sup>4</sup>,  Jianzhong Wang<sup>1</sup>
+    </p>
+
+    <div class="affiliations">
+        <sup>1</sup>Northeast Normal University,<br>
+        <sup>2</sup>Northeast Electric Power University,<br>
+        <sup>3</sup>KLAS of MOE, <br>
+        <sup>4</sup>Changchun Humanities and Sciences College
+    </div>
+
+    <div class="abstract">
+        <h2>Abstract</h2>
+        <p>
+            Temporal action localization (TAL) involves dual tasks to
+            classify and localize actions within untrimmed videos. However, the two tasks often have conflicting requirements for
+            features. Existing methods typically employ separate heads
+            for classification and localization tasks but share the same
+            input feature, leading to suboptimal performance. To address this issue, we propose a novel TAL method with
+            Cross Layer Task Decoupling and Refinement (CLTDR).
+            Based on the feature pyramid of video, CLTDR strategy integrates semantically strong features from higher pyramid
+            layers and detailed boundary-aware boundary features from
+            lower pyramid layers to effectively disentangle the action
+            classification and localization tasks. Moreover, the multiple
+            features from cross layers are also employed to refine and
+            align the disentangled classification and regression results.
+            At last, a lightweight Gated Multi-Granularity (GMG) module is proposed to comprehensively extract and aggregate
+            video features at instant, local, and global temporal granularities. Benefiting from the CLTDR and GMG modules, our
+            method achieves state-of-the-art performance on five challenging benchmarks: THUMOS14, MultiTHUMOS, EPIC_KITCHENS-100, ActivityNet-1.3, and HACS.
+        </p>
+    </div>
+
+    <div class="footer">(AAAI 2025)</div>
+
+    <div class="button-container">
+        <a href="https://arxiv.org/pdf/2412.09202" class="button">Paper</a>
+        <a href="https://github.com/LiQiang0307/CLTDR-GMG" class="button">Code</a>
+        <!-- <a href="#" class="button">Video</a> -->
+        <!-- <a href="#" class="button">Demo</a> -->
+        <a href="#" class="button">Poster</a>
+    </div>
+
+    <br>
+    <br>
+    <iframe src="https://arxiv.org/pdf/2412.09202.pdf" width="50%" height="1000px">
+        浏览器不支持iframe标签,请下载PDF查看: <a href="https://arxiv.org/pdf/2412.09202.pdf">点击这里</a>
+    </iframe>
+</body>
+</html>
